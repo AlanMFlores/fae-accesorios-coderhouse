@@ -1,0 +1,27 @@
+.show-notification {
+    position: fixed;
+    z-index: 50;
+    right: 0;
+    display: inline;
+    padding: 8px;
+    background-color: $clr-main-color;
+    color: $clr-white-color;
+    font-size: 1.6rem;
+    animation: show-notification 2000ms linear forwards;
+}
+
+@keyframes show-notification {
+    0% {
+        transform: translateY(-100%);
+    }
+    25%{
+        transform: translateY(0%)
+    }
+    75%{
+        transform: translateY(0%)
+    }
+    100% {
+        transform: translateY(-200%)
+    }
+}
+

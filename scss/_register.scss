@@ -1,0 +1,65 @@
+.register {
+    display: flex;
+    justify-content: center;
+
+    &-modal {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        max-width: 425px;
+        padding: $spacing-sections-x-small;
+        padding-top: $spacing-sections-medium;
+        padding-bottom: $spacing-sections-medium;
+        margin-top: $spacing-sections-medium;
+        position: absolute;
+        background-color: $clr-white-color;
+        border-radius: $spacing-var / 2;
+        top: 0;
+    
+        .close-register {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 24px;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &--title {
+            text-align: center;
+            margin-bottom: $spacing-sections-x-small;
+        }
+    
+        &--facebook-btn, &--google-btn {
+            @include register-social-networks;
+        }
+    
+        &--divider {
+            margin-top: $spacing-sections-small;
+            margin-bottom: $spacing-sections-small;
+            border: 1px solid #c2c2c2;
+            max-width: 400px;
+        }
+    
+        input[type='text'],[type='password'],[type='email'] {
+            @include input;
+            margin-bottom: $spacing-sections-x-small / 2;
+        }
+    
+        &-submit-btn {
+            @include submit-btn;
+        }
+    
+        &-overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
