@@ -19,7 +19,7 @@ const getProductsStorage = () => {
 
 // Función para obtener los productos del JSON
 const getProductsList = async () => {
-    const products = await fetch('./data/products.json');
+    const products = await fetch('data/products.json');
     const parsedProducts = await products.json();
     saveProductsStorage(parsedProducts);
 }
