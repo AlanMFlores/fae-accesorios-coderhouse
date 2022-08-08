@@ -1,6 +1,5 @@
 .catalogue {
     @include columns-padding;
-    padding-top: $spacing-sections-small;
     padding-bottom: $spacing-sections-small;
 
     &-title {

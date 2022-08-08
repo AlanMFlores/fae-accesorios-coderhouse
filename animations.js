@@ -13,3 +13,19 @@ hambMenu.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     menuList.classList.remove('show-menu');
 })
+
+// Register Modal
+
+const registerModal = document.querySelector('.register');
+const showRegister = document.querySelector('.show-register');
+const closeRegister = document.querySelector('.close-register');
+
+showRegister.addEventListener('click', () => {
+    registerModal.classList.add('show-register');
+    menuList.classList.remove('show-menu');
+})
+
+closeRegister.addEventListener('click', () => {
+    registerModal.classList.remove('show-register');
+})
+

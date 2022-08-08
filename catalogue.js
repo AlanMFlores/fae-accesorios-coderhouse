@@ -1,11 +1,9 @@
 // Modal de Filtros
-
 const filters = document.querySelector('.catalogue-filters');
 const showFilters = document.getElementById('show-filters')
 const backBtn = document.getElementById('back-btn');
 
 // Evento para mostrar los filtros
-
 showFilters.addEventListener('click', () => {
     filters.classList.add('show-filters')
 })
@@ -15,18 +13,7 @@ backBtn.addEventListener('click', () => {
 })
 
 // Catálogo Container
-
 let catalogueGrid = document.querySelector('.catalogue-products');
-
-// Render de Productos en Catálogo
-
-const getProductsList = async () => {
-    const products = await fetch('../data/products.json');
-    const parsedProducts = await products.json();
-    console.log(parsedProducts);
-}
-
-getProductsList();
 
 const getProducts = async () => {
     try {

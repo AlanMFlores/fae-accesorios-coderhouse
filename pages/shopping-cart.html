@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <header class="header">
+        <figure class="header-logo">
+            <a href="../index.html">
+                <img src="../images/fae-logo.png" alt="header-logo" class="header-logo-img">
+            </a>
+        </figure>
+
+        <nav class="nav">
+            <div class="nav--list">
+                <ul class="nav--list-menu">
+                    <li class="nav--list-item">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav--list-item">
+                        <a href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav--list-item">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav--list-item">
+                        <a href="favorites.html">Favoritos</a>
+                    </li>
+                    <li class="nav--list-item">
+                        <button class="show-register">Registrarse/Iniciar Sesión</button>
+                    </li>
+                    <li class="nav--list-item">
+                        <a href="shopping-cart.html"><img src="../images/cart-icon.png" alt=""></a>
+                    </li>
+                    <img src="../images/close.png" alt="" class="close-menu">
+                </ul>
+            </div>
+           
+        </nav>
+        <button class="hamb-menu-btn">
+            <img src="../images/hamb-menu.png" alt="boton menu mobile">
+        </button>
+    </header>
+
+    <main class="shopping-cart-page">
+        <div class="shopping-cart">
+            <h1 class="shopping-cart--title">
+                Tu Carrito
+            </h1>
+            <div class="shopping-cart--products">
+                <ul class="shopping-cart--products-list">
+                    <li class="shopping-cart--products-list-item">
+                        <article class="shopping-card">
+                            <div class="shopping-card-description">
+                                <figure class="shopping-card--image">
+                                    <img src="../images/products/aros-arcilla/aros-arcilla-redondos-negro.jpg" alt="aros-arcilla-redondos-negro">
+                                </figure>
+                                <div class="shopping-card-description--info">
+                                    <h3 class="shopping-card--title">Aros Redondos</h3>
+                                    <p class="shopping-card-color">Color: <b>Negro</b></p>
+                                    <p class="shopping-card-purchase--amount">Cantidad: <b>1</b></p>
+                                </div>
+                            </div>
+                            <div class="shopping-card-purchase">
+                                <h3 class="shopping-card-purchase--price"><b>$700.00</b></h3>
+                            </div>
+                            <div class="shopping-card--delete">
+                                <button class="shopping-card--delete-btn">Eliminar del Carrito</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="shopping-cart--products-list-item">
+                        <article class="shopping-card">
+                            <div class="shopping-card-description">
+                                <figure class="shopping-card--image">
+                                    <img src="../images/products/aros-arcilla/aros-animal-print-naranja.jpg" alt="aros-arcilla-redondos-negro">
+                                </figure>
+                                <div class="shopping-card-description--info">
+                                    <h3 class="shopping-card--title">Aros Animal Print</h3>
+                                    <p class="shopping-card-color">Color: <b>Naranja</b></p>
+                                    <p class="shopping-card-purchase--amount">Cantidad: <b>1</b></p>
+                                </div>
+                            </div>
+                            <div class="shopping-card-purchase">
+                                <h3 class="shopping-card-purchase--price"><b>$700.00</b></h3>
+                            </div>
+                            <div class="shopping-card--delete">
+                                <button class="shopping-card--delete-btn">Eliminar del Carrito</button>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="shopping-cart--products-list-item">
+                        <article class="shopping-card">
+                            <div class="shopping-card-description">
+                                <figure class="shopping-card--image">
+                                    <img src="../images/products/collares/collar-estrellas.jpg" alt="aros-arcilla-redondos-negro">
+                                </figure>
+                                <div class="shopping-card-description--info">
+                                    <h3 class="shopping-card--title">Collar Estrellas</h3>
+                                    <p class="shopping-card-color">Color: <b>Plateado</b></p>
+                                    <p class="shopping-card-purchase--amount">Cantidad: <b>1</b></p>
+                                </div>
+                            </div>
+                            <div class="shopping-card-purchase">
+                                <h3 class="shopping-card-purchase--price"><b>$700.00</b></h3>
+                            </div>
+                            <div class="shopping-card--delete">
+                                <button class="shopping-card--delete-btn">Eliminar del Carrito</button>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopping-cart--checkout">
+                <p class="shopping-cart--checkout-subtotal">Subtotal: <b>$700.00</b></p>
+                <p class="shopping-cart--checkput-ship">Envío: <b>$450.00</b></p>
+                <h3 class="shopping-cart--checkout-total">Total con Envío: <b>$1150.00</b></h3>
+                <button class="shopping-cart--confirm-btn">Confirmar Compra</button>
+            </div>
+        </div>
+
+        <div class="shopping-cart--form">
+                <form action="">
+                    <div class="shopping-cart--form-wrapper">
+                        <div class="shopping-cart--form-info">
+                            <h2>Información de Pago</h2>
+                            <label for="name">Nombre y Apellido</label>
+                            <input type="text" id="name" placeholder="Leopoldo Jacinto">
+                            <label for="telephone-number">Número de Teléfono</label>
+                            <input type="number" id="telephone-number" placeholder="1122334455">
+                            <label for="address">Dirección</label>
+                            <input type="text" id="address" placeholder="Calle 1234">
+                        </div>
+                        <div class="shopping-cart--form-payment">
+                            <h2>Método de Pago</h2>
+                            <div class="payment-methods">
+    
+                            </div>
+                            <label for="card-number">Número de Tarjeta</label>
+                            <input type="number" id="card-number" placeholder="0000 0000 0000 0000">
+                            <div class="card-date">
+                                <label for="">Vencimiento</label>
+                                <div class="card-date-expiration">
+                                    <input type="number" name="" id="card-month" placeholder="02">
+                                    <input type="number" name="" id="card-year" placeholder="25">
+                                </div>
+                                <label for="card-date-cvv">CVV</label>
+                                <input type="number" name="" id="card-date-cvv" placeholder="473">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button" value="Comprar" class="shopping-cart--form-btn">
+                </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-info">
+            <ul>
+                <li class="footer-info-item">Política de Privacidad</li>
+                <li class="footer-info-item">Información Legal</li>
+                <li class="footer-info-item">Contacto</li>
+            </ul>
+        </div>
+        <div class="divisory-line"></div>
+        <div class="footer-social-networks">
+            <p class="social-networks">Redes Sociales:</p>
+            <div class="social-networks-links">
+                <ul>
+                    <li class="social-networks-item">
+                        <a href="#">
+                            <img src="../images/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social-networks-item">
+                        <a href="#">
+                            <img src="../images/instagram-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li class="social-networks-item">
+                        <a href="#">
+                            <img src="../images/pinterest-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <small>Designed by Alan Flores - 2022</small>
+    </footer>
+</body>
+</html>

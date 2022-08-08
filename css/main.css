@@ -33,7 +33,7 @@ a {
     color: #B05258; }
 
 label {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   display: block;
   margin-bottom: 8px; }
@@ -92,14 +92,14 @@ h2 {
       font-size: 4.8rem; } }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400; }
   @media only screen and (min-width: 600px) {
     h3 {
       font-size: 2.4rem; } }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400; }
   @media only screen and (min-width: 600px) {
     p {
@@ -512,7 +512,6 @@ body {
 
 .catalogue {
   padding: 0 24px;
-  padding-top: 32px;
   padding-bottom: 32px; }
   @media only screen and (min-width: 768px) {
     .catalogue {
@@ -586,7 +585,7 @@ body {
       .catalogue-filters-display-btn:hover {
         color: #B05258; }
     .catalogue-filters label {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 400;
       margin-bottom: 8px; }
       @media only screen and (min-width: 600px) {
@@ -847,6 +846,146 @@ body {
         .favorite-card--info p {
           font-size: 2.4rem; } }
 
+.shopping-cart-page {
+  padding: 0 24px; }
+  @media only screen and (min-width: 768px) {
+    .shopping-cart-page {
+      padding: 0 72px; } }
+  @media only screen and (min-width: 1366px) {
+    .shopping-cart-page {
+      padding: 0 144px; } }
+
+.shopping-cart {
+  margin-bottom: 48px; }
+  .shopping-cart--title {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px; }
+  .shopping-cart--checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    background-color: #F1F1F1;
+    padding: 12px;
+    padding-top: 32px;
+    padding-bottom: 32px; }
+  .shopping-cart--confirm-btn {
+    width: 100%;
+    max-width: 400px;
+    height: 48px;
+    padding: 8px 16px;
+    background-color: #B05258;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-family: 'Libre Baskerville', serif;
+    border: none;
+    cursor: pointer;
+    transition: 300ms; }
+    .shopping-cart--confirm-btn:hover {
+      background-color: #8b4146; }
+    @media only screen and (min-width: 1024px) {
+      .shopping-cart--confirm-btn {
+        font-size: 1.8rem; } }
+  .shopping-cart--form {
+    background-color: #F1F1F1;
+    padding: 12px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 48px; }
+    @media only screen and (min-width: 1024px) {
+      .shopping-cart--form {
+        padding: 48px; } }
+    .shopping-cart--form-info {
+      margin-bottom: 24px; }
+    .shopping-cart--form h2 {
+      margin-bottom: 12px; }
+    .shopping-cart--form form input[type='number'], .shopping-cart--form form [type='text'] {
+      max-width: 400px;
+      padding: 16px;
+      background-color: #F1F1F1;
+      border: none;
+      width: 100%;
+      background-color: #FFFFFF;
+      margin-bottom: 12px; }
+    @media only screen and (min-width: 425px) {
+      .shopping-cart--form-wrapper {
+        display: grid;
+        place-content: center; } }
+    @media only screen and (min-width: 1024px) {
+      .shopping-cart--form-wrapper {
+        display: flex;
+        gap: 48px; } }
+    .shopping-cart--form-btn {
+      width: 100%;
+      max-width: 400px;
+      height: 48px;
+      padding: 8px 16px;
+      background-color: #B05258;
+      color: #FFFFFF;
+      font-size: 1.6rem;
+      font-family: 'Libre Baskerville', serif;
+      border: none;
+      cursor: pointer;
+      transition: 300ms;
+      display: block;
+      margin: 0 auto; }
+      .shopping-cart--form-btn:hover {
+        background-color: #8b4146; }
+      @media only screen and (min-width: 1024px) {
+        .shopping-cart--form-btn {
+          font-size: 1.8rem; } }
+    .shopping-cart--form-payment .card-date-expiration {
+      display: flex;
+      gap: 12px;
+      max-width: 400px; }
+
+.shopping-card {
+  padding: 12px;
+  background-color: #F1F1F1;
+  border-radius: 4px;
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 1024px) {
+    .shopping-card {
+      padding: 24px; } }
+  .shopping-card-description {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ccc; }
+    .shopping-card-description--info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px; }
+  .shopping-card--title {
+    text-align: center; }
+  .shopping-card--image {
+    width: 100px; }
+    @media only screen and (min-width: 1024px) {
+      .shopping-card--image {
+        width: 150px; } }
+    .shopping-card--image img {
+      object-fit: cover;
+      width: 100%;
+      mix-blend-mode: multiply; }
+  .shopping-card-purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc; }
+    @media only screen and (min-width: 1024px) {
+      .shopping-card-purchase {
+        justify-content: right; } }
+  .shopping-card--delete {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px; }
+    .shopping-card--delete-btn {
+      color: #B05258; }
+
 .show-notification {
   position: fixed;
   z-index: 50;
@@ -948,26 +1087,43 @@ body {
       padding: 0 144px; } }
 
 .register {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  transition: 300ms; }
   .register-modal {
-    position: relative;
+    position: absolute;
+    top: 0;
     z-index: 100;
     width: 100%;
     max-width: 425px;
     padding: 24px;
     padding-top: 48px;
     padding-bottom: 48px;
-    margin-top: 48px;
-    position: absolute;
     background-color: #FFFFFF;
-    border-radius: 4px;
-    top: 0; }
+    border-radius: 4px; }
+    @media only screen and (min-width: 768px) {
+      .register-modal {
+        max-height: 90vh;
+        overflow-y: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
     .register-modal .close-register {
+      cursor: pointer;
       position: absolute;
       top: 16px;
       right: 16px;
-      width: 24px; }
+      width: 16px; }
     .register-modal form {
       display: flex;
       flex-direction: column; }
@@ -1015,6 +1171,10 @@ body {
       bottom: 0;
       left: 0;
       background-color: rgba(0, 0, 0, 0.5); }
+
+.show-register {
+  opacity: 1;
+  z-index: 200; }
 
 .aros-category {
   padding: 0 24px; }

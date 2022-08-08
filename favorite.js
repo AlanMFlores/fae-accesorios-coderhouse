@@ -6,7 +6,6 @@ const closeModalBtn = document.querySelector('.close-modal-btn') // Boton para c
 let favListContainer = document.querySelector('.favorites-container'); // Modal de productos agregados a favoritos
 const favBtn = document.querySelectorAll('.fa-heart'); // Selecciona todos los íconos de fav
 
-
 // Función para renderizar los productos en favoritos
 const favoriteRender = (list) => {
     const favoriteEmpty = document.querySelector('.favorites-container-empty');

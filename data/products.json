@@ -329,8 +329,8 @@
         ]
     },
     {
-        "name":"Aros Laureles", 
         "id": "015", 
+        "name":"Aros Laureles", 
         "price": 550, 
         "category": "aros", 
         "link": "products/aros/aros-laureles.html", 
