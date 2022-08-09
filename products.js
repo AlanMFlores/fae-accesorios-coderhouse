@@ -2,16 +2,6 @@
 ==================== Local Storage ====================
 */
 
-// Guardar productos en LocalStorage
-const saveProductsStorage = (products) => {
-    localStorage.setItem('products', JSON.stringify(products));
-}
-
-// Obtener productos del LocalStorage
-const getProductsStorage = () => {
-    return JSON.parse(localStorage.getItem('products') || []);
-}
-
 /* 
 ==================== Funciones Globales ====================
 */
