@@ -1,53 +1,9 @@
 /* 
-==================== Local Storage ====================
-*/
-
-// Guardar productos en LocalStorage
-const saveProductsStorage = (products) => {
-    localStorage.setItem('products', JSON.stringify(products));
-}
-
-// Obtener productos del LocalStorage
-const getProductsStorage = () => {
-    return JSON.parse(localStorage.getItem('products') || []);
-}
-
-
-/* 
-==================== Products List ====================
-*/
-
-// Función para obtener los productos del JSON
-const getProductsList = async () => {
-    const products = await fetch('../data/products.json');
-    const parsedProducts = await products.json();
-    saveProductsStorage(parsedProducts);
-}
-
-getProductsList();
-
-// Array de Productos
-const products = getProductsStorage();
-
-
-/* 
 ==================== Render Products Home ====================
 */
 
 // Featured Products Container 
 let featuredProducts = document.querySelector('.featured-products-grid');
-
-// Shuffle Array
-const shuffleArray = (arr) => {
-    let newArr = arr.sort(() => Math.random() - 0.5);
-    return newArr;
-}
-
-// Slice Array
-const sliceArr = (arr) => {
-    let newArr = arr.slice(0, 12);
-    return newArr;
-}
 
 // Funcion para renderizar productos en el home
 const renderProductsHome = (arr) => {

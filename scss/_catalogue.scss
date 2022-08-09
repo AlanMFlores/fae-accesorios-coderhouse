@@ -8,8 +8,8 @@
     }
 
     &-filters {
-        @include columns-padding;
-        background-color: #FFFFFF;
+        display: grid;
+        place-content: center;
         position: fixed;
         height: 100%;
         overflow-y: auto;
@@ -23,6 +23,17 @@
         padding-bottom: $spacing-sections-x-small;
         transition: 300ms;
         transform: translateY(-100%);
+
+        &-wrapper {
+            padding: 24px 32px;
+            background-color: #FFFFFF;
+            max-width: 600px;
+            margin: 0 auto;
+
+            @include media(x-medium-dev) {
+                padding: 32px 48px;
+            }
+        }
 
         &-title {
             text-align: center;
@@ -72,6 +83,8 @@
         }
 
         &-form {
+            max-width: 400px;
+            margin: 0 auto;
             form {
                 display: flex;
                 flex-direction: column;
@@ -82,6 +95,16 @@
 
         &-btn {
             @include submit-btn;
+        }
+
+        &-overlay {
+            position: fixed;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
     }
