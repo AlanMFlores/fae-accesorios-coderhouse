@@ -5,11 +5,12 @@
 // Iconos de favorito
 const favBtn = document.querySelectorAll('.fa-heart');
 
-// Productos almacenados en localStorage
-let storageProducts = getProductsStorage();
-
 // Productos agregados a favoritos
 let favoriteProducts = localStorage.getItem('favorite-list') || [];
+
+// Obtener productos favoritos de localStorage
+
+let parsedFavoriteProducts = JSON.parse(localStorage.getItem('favorite-list'));
 
 
 //Función para agregar producto a favoritos
@@ -30,7 +31,7 @@ const addToFav = () => {
     favBtn.forEach(fav => {
         fav.addEventListener('click', (event) => {
                 event.target.classList.add('like-product');
-                let matchProduct = products.find(product => product.id == event.target.id);
+                let matchProduct = catalogueProducts.find(product => product.id == event.target.id);
                 let stringifiedMatchProduct = JSON.stringify(matchProduct);
                 event.target.classList.contains('like-product') ? addProduct(stringifiedMatchProduct) : removeProduct(matchProduct);
             })

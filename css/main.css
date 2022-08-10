@@ -41,12 +41,21 @@ label {
     label {
       font-size: 1.8rem; } }
 
+input[type='text'], [type='number'], [type='email'] {
+  font-family: 'Montserrat', sans-serif; }
+
 button {
   background-color: transparent;
   border: none;
   font-family: 'Baskerville', serif;
   font-size: 1.6rem;
   cursor: pointer; }
+
+textarea {
+  font-family: 'Montserrat', sans-serif; }
+
+::placeholder {
+  font-family: 'Montserrat', sans-serif; }
 
 .breadcrumb {
   margin-top: 24px;

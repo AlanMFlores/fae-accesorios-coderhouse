@@ -5,6 +5,11 @@
 // Container de favoritos
 const favoritesContainer = document.querySelector('.favorites-products-list');
 
+let parsedFavoriteList = []
+
+for(let i=0; i < parsedFavoriteProducts.length; i++) {
+    parsedFavoriteList.push(JSON.parse(parsedFavoriteProducts[i]))
+}
 
 // Función para renderizar los productos en favoritos
 const favoriteRender = (list) => {
@@ -16,8 +21,8 @@ const favoriteRender = (list) => {
         favItem.classList.add('favorites-products-list--item');
         favItem.innerHTML = `
                             <div class="favorite-card">
-                                <figure     class="favorite-card--img">
-                                    <img src=${fav.image} alt="">
+                                <figure class="favorite-card--img">
+                                    <img src=../${fav.image} alt="">
                                 </figure>
                                 <div class="favorite-card--info">
                                     <h3>${fav.name}</h3>
@@ -29,4 +34,4 @@ const favoriteRender = (list) => {
     }
 }
 
-favoriteRender(favoriteProducts);
+favoriteRender(parsedFavoriteList);

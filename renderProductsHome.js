@@ -1,38 +1,4 @@
 /* 
-<<<<<<< HEAD:renderProductsHome.js
-=======
-==================== Local Storage ====================
-*/
-
-// Guardar productos en LocalStorage
-const saveProductsStorage = (products) => {
-    localStorage.setItem('products', JSON.stringify(products));
-}
-
-// Obtener productos del LocalStorage
-const getProductsStorage = () => {
-    return JSON.parse(localStorage.getItem('products') || []);
-}
-
-
-/* 
-==================== Products List ====================
-*/
-
-// Función para obtener los productos del JSON
-const getProductsList = async () => {
-    const products = await fetch('data/products.json');
-    const parsedProducts = await products.json();
-    saveProductsStorage(parsedProducts);
-}
-
-getProductsList();
-
-// Array de Productos
-const products = getProductsStorage();
-
-
-/* 
 >>>>>>> 0eccb7919334238efb1660b878c91b2a9118a585:product.js
 ==================== Render Products Home ====================
 */
@@ -51,11 +17,6 @@ const renderProductsHome = (arr) => {
         card.innerHTML = ` <div class="product-card-image">
                                     <img src=../${product.image} alt="product card image">
                                 </a>
-                                <div class="product-card-favorite">
-                                    <button class="fav-check" id="false">
-                                        <i class="fa-solid fa-heart" id=${product.id}></i>
-                                    </button>
-                                </div>
                             </div>
                             <div class="product-card-description">
                                 <div class="product-card-info">

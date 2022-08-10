@@ -37,7 +37,7 @@
                             <button class="show-register">Registrarse/Iniciar Sesión</button>
                         </li>
                         <li class="nav--list-item">
-                            <button><img src="images/cart-icon.png" alt=""></button>
+                            <a href="pages/shopping-cart.html"><img src="../images/cart-icon.png" alt=""></a>
                         </li>
                         <img src="images/close.png" alt="" class="close-menu">
                     </ul>
@@ -169,8 +169,8 @@
 
                 <div class="newsletter-form">
                     <form action="">
-                        <input type="email" name="" id="newsletter-email" class="newsletter-email" placeholder="Correo electrónico">
-                        <input type="button" value="Quiero Descuentos Exclusivos" class="newsletter-btn">
+                        <input type="email" name="" id="newsletter-email" class="newsletter-email" placeholder="Correo electrónico" required>
+                        <input type="submit" value="Quiero Descuentos Exclusivos" class="newsletter-btn">
                     </form>
                 </div>
             </section>
@@ -187,13 +187,13 @@
                     <hr class="register-modal--divider"></hr>
     
                     <label for="name">Nombre</label>
-                    <input type="text" name="" id="name" placeholder="Ingrese su nombre">
+                    <input type="text" name="" id="name" placeholder="Ingrese su nombre" required>
                     <label for="last-name">Apellido</label>
-                    <input type="text" name="" id="last-name" placeholder="Ingrese su apellido">
+                    <input type="text" name="" id="last-name" placeholder="Ingrese su apellido" required>
                     <label for="email">Email</label>
-                    <input type="email" name="" id="email" placeholder="Ingrese su correo electrónico">
+                    <input type="email" name="" id="email" placeholder="Ingrese su correo electrónico" required>
                     <label for="password">Contraseña</label>
-                    <input type="password" name="" id="password" placeholder="Ingrese su contraseña">
+                    <input type="password" name="" id="password" placeholder="Ingrese su contraseña" required>
                     <input type="submit" value="Registrarse" class="register-modal-submit-btn">
                 </form>
             </div>
@@ -235,7 +235,8 @@
         </footer>
     </div>
     
-    <script src="products.js"></script>
+    <script src="globalFunctions.js"></script>
+    <script src="productsHome.js"></script>
     <script src="renderProductsHome.js"></script>
     <script src="animations.js"></script>
     <script src="favorites.js"></script>

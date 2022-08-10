@@ -1,3 +1,7 @@
+/* 
+==================== Render Catalogue ====================
+*/
+
 // Catálogo Container
 let catalogueGrid = document.querySelector('.catalogue-products');
 
@@ -31,7 +35,7 @@ const renderCatalogue = (arr) => {
     })
 }
 
-renderCatalogue(products);
+renderCatalogue(catalogueProducts);
 
 // Renderizado Inicial
 window.onload = () => {
