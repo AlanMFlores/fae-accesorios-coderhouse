@@ -1,16 +1,17 @@
 /* 
-==================== Render Catalogue ====================
+==================== Categories Products Render ====================
 */
 
-// Catálogo Container
-let catalogueGrid = document.querySelector('.catalogue-products');
+const categoryContainer = document.querySelector('.category-container');
+const categoryIdentifier = categoryContainer.id;
 
-const renderCatalogue = (arr) => {
-    let shuffledArr = shuffleArray(arr);
+// Funcion para renderizar los productos según categoría
+const renderCategory = (arr) => {
+    const categoryProducts = arr.filter(item => item.category == categoryIdentifier);
 
-    shuffledArr.forEach(product => {
+    categoryProducts.forEach(product => {
         let card = document.createElement('div');
-        card.classList.add('product-card', product.category, 'hide');
+        card.classList.add('product-card', product.category);
         card.innerHTML = ` <div class="product-card-image">
                                     <img src=../${product.image} alt="product card image">
                                 </a>
@@ -27,45 +28,14 @@ const renderCatalogue = (arr) => {
                                 </div>
                             </div>
                             <div class="product-card-purchase">
-                                <button class="cart-btn" id=${product.id}>Agregar al Carrito</buton>
-                                <button class="purchase-btn" id=${product.id}>Comprar</buton>
+                                <button class="cart-btn">Agregar al Carrito</buton>
+                                <button class="purchase-btn">Comprar</buton>
                             </div>
         `
-        catalogueGrid.append(card);
+        categoryContainer.append(card);
     })
 }
 
-renderCatalogue(catalogueProducts);
-
-// Renderizado Inicial
-window.onload = () => {
-    filterProduct('todos');
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+renderCategory(catalogueProducts)
 
 

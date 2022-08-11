@@ -127,3 +127,20 @@
     margin-bottom: $spacing-var;
     max-width: 400px;
 }
+
+@mixin products-container {
+    display: grid;
+    justify-content: center;
+
+    @include media(x-medium-dev) {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        max-width: 624px;
+        margin: 0 auto;
+    }
+    
+    @include media(large-dev) {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 936px;
+    }
+}

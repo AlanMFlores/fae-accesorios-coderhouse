@@ -84,3 +84,7 @@
         }
     }
 }
+
+.category-container {
+    @include products-container;
+}

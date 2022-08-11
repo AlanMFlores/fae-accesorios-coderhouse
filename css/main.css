@@ -349,6 +349,20 @@ body {
       grid-template: repeat(2, 1fr)/repeat(2, 1fr);
       gap: 16px; } }
 
+.category-container {
+  display: grid;
+  justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    .category-container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      max-width: 624px;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 1024px) {
+    .category-container {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 936px; } }
+
 .featured-products-grid {
   display: grid;
   justify-content: center; }

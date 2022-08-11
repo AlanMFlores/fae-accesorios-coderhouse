@@ -22,6 +22,16 @@ const getCatalogueStorage = () => {
     return JSON.parse(localStorage.getItem('catalogue') || []);
 }
 
+// Guardar productos en shoppingcart en LocalStorage
+const saveShoppingCartStorage = () => {
+    localStorage.setItem('shopping-cart', JSON.stringify());
+}
+
+// Obtener catálogo del LocalStorage
+const getShoppingCartStorage = () => {
+    return JSON.parse(localStorage.getItem('shopping-cart') || []);
+}
+
 // Ordenar productos aleatoriamente
 const shuffleArray = (arr) => {
     let newArr = arr.sort(() => Math.random() - 0.5);
