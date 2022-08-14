@@ -177,6 +177,19 @@
     }
 }
 
+.empty-cart {
+    text-align: center;
+    margin-bottom: $spacing-sections-x-small;
+
+    @include media(large-dev) {
+        text-align: left;
+    }
+
+    a {
+        color: $clr-main-color;
+    }
+}
+
 .show-notification {
     position: fixed;
     z-index: 50;

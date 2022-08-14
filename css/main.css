@@ -1040,6 +1040,15 @@ body {
     .shopping-card--delete-btn {
       color: #B05258; }
 
+.empty-cart {
+  text-align: center;
+  margin-bottom: 24px; }
+  @media only screen and (min-width: 1024px) {
+    .empty-cart {
+      text-align: left; } }
+  .empty-cart a {
+    color: #B05258; }
+
 .show-notification {
   position: fixed;
   z-index: 50;
